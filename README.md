@@ -54,6 +54,11 @@ Dự án này xây dựng hệ thống chấm thi tự động cho bài thi tự
 
 > **Khuyến nghị:** Để tránh lỗi môi trường/phụ thuộc, hãy upload toàn bộ code, dữ liệu và mô hình lên Kaggle, sau đó chạy trực tiếp trên Kaggle Notebook với GPU.
 
+### Các bước thực hiện pretrain mô hình trên bộ dữ liệu ocr của bạn: 
+- Tạo một thư mực trước hai file [LoadData.ipynb](https://colab.research.google.com/drive/1VdUeXH1yUq_3oXnITssuIDkWNQcLRREx?usp=drive_link) và [fine-tuned-vlm-ocr.ipynb](https://colab.research.google.com/drive/17wC8-tC0doAE6K0ECdmlisLWxCoHhJqh#scrollTo=eca6b26a)
+- Tải bộ dữ liệu của bạn và thực hiện chạy các phần tiền xử lý dữ liệu trong file **LoadData.ipynb**
+- Sau đó bộ dữ liệu sẽ xuất hiện trong thư mục , tiếp đến chạy các phần trong file **fine-tuned-vlm-ocr**
+- Sau cùng bạn sẽ nhận được file model dưới dạng **zip** trong cùng 1 thực hiện, thực hiện giải nén và load model theo các bước trên
 ## Chi tiết 
 - [Code training Fine-tuned Vintern1B-v2 cho OCR](https://drive.google.com/drive/folders/1KDiZ2Y4zbx2Td5QnFPDn5nD_Vrw55Uv5?usp=drive_link) 
 - [Code inference Llama-3B](https://www.kaggle.com/code/taitruong256/inference-llama-3b)
